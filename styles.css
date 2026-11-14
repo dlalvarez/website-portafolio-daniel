@@ -216,6 +216,13 @@ svg{display:block}
 }
 
 /* ---------- Responsive v2 ---------- */
+/* Cabecera siempre visible en móvil (y teléfonos en horizontal): fija, sólida y sin ocultarse al hacer scroll.
+   Sin backdrop-filter/transform: crearían un contenedor para el panel del menú (position:fixed). */
+@media (max-width:900px),(max-height:520px){
+  .site-header,.site-header.hide{transform:none;background:var(--bg);border-bottom:1px solid var(--line);padding-top:calc(10px + env(safe-area-inset-top));padding-bottom:10px;min-height:calc(64px + env(safe-area-inset-top))}
+  html{scroll-padding-top:76px}
+}
+@media (max-width:900px){.nav{padding-top:calc(84px + env(safe-area-inset-top))}}
 /* Visor: navegación en la barra superior (móvil y teléfonos en horizontal) */
 @media (max-width:900px),(max-height:520px){
   .lb-nav{top:calc(10px + env(safe-area-inset-top));margin-top:0;width:44px;height:44px}

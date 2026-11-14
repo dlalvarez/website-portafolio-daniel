@@ -158,7 +158,7 @@ function closeNav(){nav.classList.remove('open');burger.setAttribute('aria-expan
 burger.addEventListener('click',()=>{const o=!nav.classList.contains('open');nav.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
 nav.addEventListener('click',e=>{if(e.target.closest('a')){closeNav();$('.has-sub:hover')?.blur()}});
 let lastY=0;
-addEventListener('scroll',()=>{const y=scrollY;header.classList.toggle('hide',y>lastY&&y>200&&!nav.classList.contains('open'));lastY=y},{passive:true});
+addEventListener('scroll',()=>{const y=scrollY;header.classList.toggle('hide',y>lastY&&y>200&&!nav.classList.contains('open')&&!matchMedia('(max-width:900px),(max-height:520px)').matches);lastY=y},{passive:true});
 
 /* ---------- Visor (con enlaces directos #/proyecto/slug) ---------- */
 const lb=$('[data-lb]');let items=[],cur=0,lastFocus,isOpen=false;
