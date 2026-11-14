@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daniel — Diseño gráfico</title>
+<meta name="description" content="Portafolio de diseño gráfico: identidad, editorial, packaging y cartelería.">
+<meta name="theme-color" content="#f6f4ef">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Daniel — Diseño gráfico">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23151515%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="curtain" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <a class="brand" href="#top" data-i18n-attr="aria-label:brand.home" aria-label="Inicio"><b data-name>Daniel Alvarez</b><span>®</span></a>
+
+  <!-- Selector de idioma: siempre visible (escritorio y móvil), se genera desde site.json -->
+  <div class="lang" role="group" data-lang-switch data-i18n-attr="aria-label:lang.label" aria-label="Idioma"></div>
+
+  <button class="burger" aria-label="Abrir menú" data-i18n-attr="aria-label:nav.open" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+
+  <nav id="nav" class="nav" aria-label="Principal" data-i18n-attr="aria-label:nav.label">
+    <ul>
+      <li class="has-sub">
+        <button class="nav-link" aria-expanded="false"><span data-i18n="nav.about">Acerca de</span> <b></b></button>
+        <div class="sub">
+          <a href="#acerca" data-i18n="nav.bio">Biografía</a>
+          <a href="#acerca-proceso" data-i18n="nav.process">Proceso</a>
+          <a href="#acerca-premios" data-i18n="nav.awards">Premios</a>
+        </div>
+      </li>
+      <li class="has-sub">
+        <button class="nav-link" aria-expanded="false"><span data-i18n="nav.projects">Proyectos</span> <b></b></button>
+        <div class="sub" data-cats></div>
+      </li>
+      <li class="has-sub">
+        <button class="nav-link" aria-expanded="false"><span data-i18n="nav.works">Trabajos</span> <b></b></button>
+        <div class="sub" data-years></div>
+      </li>
+      <li><a class="nav-link" href="#clientes" data-i18n="nav.clients">Clientes</a></li>
+      <li><a class="nav-link nav-cta" href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow reveal" data-hero-eyebrow></p>
+    <h1 class="hero-title" data-hero-title></h1>
+    <div class="hero-foot reveal">
+      <p data-hero-intro></p>
+      <a href="#proyectos" class="scroll-cue"><span data-i18n="hero.cta">Ver proyectos</span> <span>↓</span></a>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section">
+    <div class="section-head reveal">
+      <h2><span data-i18n="projects.title">Proyectos</span> <sup data-count></sup></h2>
+      <p data-i18n="projects.sub">Casos completos, agrupados por disciplina.</p>
+    </div>
+    <div class="filters reveal" role="tablist" data-i18n-attr="aria-label:projects.filter" aria-label="Filtrar proyectos" data-filters></div>
+    <div class="grid" data-grid></div>
+  </section>
+
+  <section id="trabajos" class="section">
+    <div class="section-head reveal">
+      <h2><span data-i18n="works.title">Trabajos</span> <sup data-wcount></sup></h2>
+      <p data-i18n="works.sub">Piezas puntuales, ordenadas por año. Selecciónalas para verlas en grande.</p>
+    </div>
+    <div class="works" data-works></div>
+  </section>
+
+  <section id="acerca" class="section about">
+    <div class="section-head reveal"><h2 data-i18n="about.title">Acerca de</h2></div>
+    <div class="about-grid">
+      <div class="about-portrait reveal" data-portrait aria-hidden="true"></div>
+      <div class="about-text reveal">
+        <p class="lead" data-lead></p>
+        <p data-about-text></p>
+        <dl class="stats" data-stats></dl>
+      </div>
+    </div>
+
+    <div id="acerca-proceso" class="process reveal">
+      <h3 data-i18n="about.process">Proceso</h3>
+      <ol data-process></ol>
+    </div>
+
+    <div id="acerca-premios" class="awards reveal">
+      <h3 data-i18n="about.awards">Premios y menciones</h3>
+      <ul data-awards></ul>
+    </div>
+  </section>
+
+  <section id="clientes" class="section">
+    <div class="section-head reveal">
+      <h2><span data-i18n="clients.title">Clientes</span> <sup data-ccount></sup></h2>
+      <p data-i18n="clients.sub">Pulsa un nombre para ver su trabajo.</p>
+    </div>
+    <ul class="clients" data-clients></ul>
+  </section>
+
+  <section id="contacto" class="section contact">
+    <p class="eyebrow reveal" data-i18n="contact.eyebrow">¿Hablamos?</p>
+    <a class="mail reveal" data-mail href="#contacto"></a>
+    <div class="contact-grid reveal">
+      <div><h4 data-i18n="contact.studio">Estudio</h4><p data-address></p></div>
+      <div><h4 data-i18n="contact.social">Redes</h4><p data-social></p></div>
+      <form class="form" data-form>
+        <label><span data-i18n="form.name">Nombre</span><input required name="n" maxlength="120" autocomplete="name"></label>
+        <label><span data-i18n="form.email">Correo</span><input required type="email" name="e" maxlength="200" autocomplete="email"></label>
+        <label><span data-i18n="form.message">Mensaje</span><textarea required name="m" rows="2" minlength="10" maxlength="3000"></textarea></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit"><span data-i18n="form.send">Enviar</span> →</button>
+        <p class="form-ok" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span data-footer></span>
+  <a href="#top" data-i18n="footer.top">Volver arriba ↑</a>
+</footer>
+
+<!-- Vista previa flotante (trabajos) -->
+<div class="peek" data-peek aria-hidden="true"></div>
+
+<!-- Visor -->
+<div class="lightbox" data-lb aria-hidden="true" role="dialog" aria-modal="true" data-i18n-attr="aria-label:lb.label" aria-label="Detalle del proyecto">
+  <button class="lb-close" data-i18n="lb.close" data-i18n-attr="aria-label:lb.closeAria" aria-label="Cerrar">Cerrar ✕</button>
+  <button class="lb-nav prev" data-i18n-attr="aria-label:lb.prev" aria-label="Anterior">←</button>
+  <button class="lb-nav next" data-i18n-attr="aria-label:lb.next" aria-label="Siguiente">→</button>
+  <div class="lb-body">
+    <div class="lb-media"><div class="lb-art" data-lb-art></div><div class="lb-thumbs" data-lb-thumbs></div></div>
+    <div class="lb-info">
+      <p class="lb-meta" data-lb-meta></p>
+      <h3 data-lb-title></h3>
+      <p data-lb-desc></p>
+      <ul data-lb-tags></ul>
+    </div>
+  </div>
+</div>
+
+<p class="sr-only" aria-live="polite" data-lang-status></p>
+<script src="script.js"></script>
+</body>
+</html>

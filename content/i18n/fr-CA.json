@@ -1,0 +1,260 @@
+{
+  "ui": {
+    "nav.label": "Principal",
+    "brand.home": "Accueil",
+    "nav.open": "Ouvrir le menu",
+    "nav.close": "Fermer le menu",
+    "nav.about": "À propos",
+    "nav.bio": "Biographie",
+    "nav.process": "Démarche",
+    "nav.awards": "Prix",
+    "nav.projects": "Projets",
+    "nav.works": "Réalisations",
+    "nav.clients": "Clients",
+    "nav.contact": "Contact",
+    "lang.label": "Langue",
+    "lang.changed": "Langue : {name}",
+    "hero.cta": "Voir les projets",
+    "projects.title": "Projets",
+    "projects.sub": "Études de cas complètes, regroupées par discipline.",
+    "projects.filter": "Filtrer les projets",
+    "projects.all": "Tous",
+    "projects.empty": "Aucun projet dans cette sélection.",
+    "projects.open": "Ouvrir {title}",
+    "filter.client": "Client : {name} ✕",
+    "works.title": "Réalisations",
+    "works.sub": "Pièces ponctuelles, classées par année. Sélectionnez-en une pour l’agrandir.",
+    "works.open": "Ouvrir {title}",
+    "about.title": "À propos",
+    "about.process": "Démarche",
+    "about.awards": "Prix et mentions",
+    "clients.title": "Clients",
+    "clients.sub": "Sélectionnez un nom pour voir son travail.",
+    "clients.projects.one": "{n} projet",
+    "clients.projects.other": "{n} projets",
+    "clients.misc": "Réalisations ponctuelles",
+    "contact.eyebrow": "On se parle?",
+    "contact.studio": "Studio",
+    "contact.social": "Réseaux",
+    "form.name": "Nom",
+    "form.email": "Courriel",
+    "form.message": "Message",
+    "form.send": "Envoyer",
+    "form.sending": "Envoi en cours…",
+    "form.ok": "Merci, {name}. J’ai bien reçu votre message et je vous réponds bientôt.",
+    "form.fail": "Envoi impossible : {error}. Écrivez-moi à {email}.",
+    "form.mailto": "Votre application de courriel va s’ouvrir pour envoyer le message.",
+    "form.subject": "Contact depuis le portfolio — {name}",
+    "err.name": "Nom invalide",
+    "err.email": "Courriel invalide",
+    "err.message": "Le message doit comporter entre 10 et 3000 caractères",
+    "err.rate": "Trop de messages, veuillez réessayer plus tard",
+    "err.generic": "Erreur lors de l’envoi",
+    "err.network": "Impossible de joindre le serveur",
+    "footer.copy": "© {year} {name}",
+    "footer.top": "Retour en haut ↑",
+    "lb.label": "Détails du projet",
+    "lb.close": "Fermer ✕",
+    "lb.closeAria": "Fermer",
+    "lb.prev": "Précédent",
+    "lb.next": "Suivant",
+    "lb.image": "Image {n}",
+    "lb.workDesc": "Pièce ponctuelle — {category}. Réalisée pour {client}."
+  },
+  "site": {
+    "title": "Daniel — Design graphique",
+    "description": "Portfolio de design graphique : identité visuelle, édition, emballage et affiches.",
+    "location": "Bogotá",
+    "availability": "Disponible en 2027",
+    "address": "Cra. 7 #45-12, Bogotá, Colombie"
+  },
+  "hero": {
+    "eyebrow": "Designer graphique",
+    "lines": [
+      "Des formes qui",
+      "restent <em>en</em>",
+      "<em>mémoire.</em>"
+    ],
+    "intro": "Identité visuelle, édition, emballage et affiches pour les marques qui préfèrent en dire moins, mais mieux."
+  },
+  "about": {
+    "lead": "Je suis Daniel, designer graphique avec neuf ans de métier. Je crois qu’un bon design se remarque moins qu’il ne se ressent.",
+    "text": "Je travaille entre le papier et l’écran : systèmes d’identité, livres et magazines, emballages et affiches. Je commence toujours par des questions, je dessine à la main et je construis jusqu’à ce que tout le superflu disparaisse.",
+    "stats": [
+      {
+        "n": "9",
+        "l": "ans d’expérience"
+      },
+      {
+        "n": "64",
+        "l": "projets livrés"
+      },
+      {
+        "n": "12",
+        "l": "pays rejoints"
+      }
+    ],
+    "process": [
+      {
+        "t": "Écouter",
+        "d": "Entrevues, références et un mandat clair."
+      },
+      {
+        "t": "Explorer",
+        "d": "Croquis, typographie et trois pistes distinctes."
+      },
+      {
+        "t": "Construire",
+        "d": "Système, grille et pièces clés peaufinées."
+      },
+      {
+        "t": "Livrer",
+        "d": "Fichiers, guide d’utilisation et accompagnement."
+      }
+    ],
+    "awards": [
+      {
+        "y": 2026,
+        "t": "Bronze — Prix Lápiz Andino, Identité"
+      },
+      {
+        "y": 2025,
+        "t": "Mention — Biennale de design latino-américain"
+      },
+      {
+        "y": 2024,
+        "t": "Finaliste — Typographie appliquée, Madrid"
+      },
+      {
+        "y": 2023,
+        "t": "Sélection officielle — Affiche ibéro-américaine"
+      }
+    ]
+  },
+  "categories": {
+    "identity": "Identité",
+    "editorial": "Édition",
+    "packaging": "Emballage",
+    "poster": "Affichage",
+    "digital": "Numérique"
+  },
+  "projects": {
+    "casa-alba": {
+      "description": "Système d’identité pour un hôtel-boutique à Carthagène : monogramme, palette chaleureuse et signalisation.",
+      "tags": [
+        "Logotype",
+        "Signalisation",
+        "Papeterie"
+      ]
+    },
+    "marea-viva": {
+      "description": "Série d’affiches pour un festival de musique côtier. Des formes simples qui bougent comme des vagues.",
+      "tags": [
+        "Affiche",
+        "Série",
+        "Impression"
+      ]
+    },
+    "tierra-baja": {
+      "description": "Gamme d’emballages pour du café d’origine : encres plates sur kraft et grille modulaire.",
+      "tags": [
+        "Emballage",
+        "Illustration",
+        "Sérigraphie"
+      ]
+    },
+    "revista-umbral": {
+      "description": "Direction artistique et mise en page d’une revue trimestrielle d’essais et de photographie.",
+      "tags": [
+        "Mise en page",
+        "Typographie",
+        "Direction artistique"
+      ],
+      "title": "Revue Umbral"
+    },
+    "olivar": {
+      "description": "Étiquettes et coffret pour huile d’olive extra vierge, avec un sceau typographique.",
+      "tags": [
+        "Étiquette",
+        "Coffret"
+      ]
+    },
+    "pulso": {
+      "description": "Identité visuelle pour une application de bien-être : système de motifs et micro-animations.",
+      "tags": [
+        "UI",
+        "Motifs",
+        "Animation"
+      ]
+    },
+    "noches-de-jazz": {
+      "description": "Affiches de saison pour le cycle annuel de jazz au Teatro Mayor.",
+      "tags": [
+        "Affiche",
+        "Typographie"
+      ],
+      "title": "Nuits de jazz"
+    },
+    "atlas-de-sal": {
+      "description": "Conception d’un livre d’essai photographique : couverture, pages intérieures et jaquette.",
+      "tags": [
+        "Livre",
+        "Photographie"
+      ],
+      "title": "Atlas du sel"
+    },
+    "nodo": {
+      "description": "Marque pour un espace de cotravail, basée sur un nœud qui se connecte.",
+      "tags": [
+        "Logotype",
+        "Guide de marque"
+      ]
+    },
+    "raiz": {
+      "description": "Boutique en ligne et campagne sociale pour une marque de produits locaux.",
+      "tags": [
+        "Web",
+        "Réseaux sociaux",
+        "Campagne"
+      ]
+    }
+  },
+  "works": {
+    "tarjeta-de-temporada": {
+      "title": "Carte de saison"
+    },
+    "cartel-marea-b1": {
+      "title": "Affiche « Marea » B1"
+    },
+    "menu-de-desayunos": {
+      "title": "Menu du petit-déjeuner"
+    },
+    "etiqueta-edicion-limitada": {
+      "title": "Étiquette en édition limitée"
+    },
+    "portada-n-12": {
+      "title": "Couverture no 12"
+    },
+    "kit-de-redes-verano": {
+      "title": "Trousse de médias sociaux « Été »"
+    },
+    "afiche-conferencia": {
+      "title": "Affiche de conférence"
+    },
+    "estuche-de-regalo": {
+      "title": "Coffret-cadeau"
+    },
+    "isotipo-animado": {
+      "title": "Symbole de marque animé"
+    },
+    "programa-de-mano": {
+      "title": "Programme de salle"
+    },
+    "senaletica-de-sala": {
+      "title": "Signalisation de salle"
+    },
+    "banner-web-raiz": {
+      "title": "Bannière Web « Raíz »"
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "ui": {
+    "nav.label": "Main",
+    "brand.home": "Home",
+    "nav.open": "Open menu",
+    "nav.close": "Close menu",
+    "nav.about": "About",
+    "nav.bio": "Biography",
+    "nav.process": "Process",
+    "nav.awards": "Awards",
+    "nav.projects": "Projects",
+    "nav.works": "Works",
+    "nav.clients": "Clients",
+    "nav.contact": "Contact",
+    "lang.label": "Language",
+    "lang.changed": "Language: {name}",
+    "hero.cta": "View projects",
+    "projects.title": "Projects",
+    "projects.sub": "Full case studies, grouped by discipline.",
+    "projects.filter": "Filter projects",
+    "projects.all": "All",
+    "projects.empty": "No projects in this selection.",
+    "projects.open": "Open {title}",
+    "filter.client": "Client: {name} ✕",
+    "works.title": "Works",
+    "works.sub": "One-off pieces, sorted by year. Select one to view it larger.",
+    "works.open": "Open {title}",
+    "about.title": "About",
+    "about.process": "Process",
+    "about.awards": "Awards & mentions",
+    "clients.title": "Clients",
+    "clients.sub": "Select a name to see their work.",
+    "clients.projects.one": "{n} project",
+    "clients.projects.other": "{n} projects",
+    "clients.misc": "One-off works",
+    "contact.eyebrow": "Let's talk?",
+    "contact.studio": "Studio",
+    "contact.social": "Social",
+    "form.name": "Name",
+    "form.email": "Email",
+    "form.message": "Message",
+    "form.send": "Send",
+    "form.sending": "Sending…",
+    "form.ok": "Thank you, {name}. I received your message and will reply soon.",
+    "form.fail": "Couldn't send: {error}. Write to me at {email}.",
+    "form.mailto": "Your email app will open so you can send the message.",
+    "form.subject": "Portfolio contact — {name}",
+    "err.name": "Invalid name",
+    "err.email": "Invalid email",
+    "err.message": "The message must be between 10 and 3000 characters",
+    "err.rate": "Too many messages, please try again later",
+    "err.generic": "Error while sending",
+    "err.network": "Could not reach the server",
+    "footer.copy": "© {year} {name}",
+    "footer.top": "Back to top ↑",
+    "lb.label": "Project details",
+    "lb.close": "Close ✕",
+    "lb.closeAria": "Close",
+    "lb.prev": "Previous",
+    "lb.next": "Next",
+    "lb.image": "Image {n}",
+    "lb.workDesc": "One-off piece — {category}. Created for {client}."
+  },
+  "site": {
+    "title": "Daniel — Graphic design",
+    "description": "Graphic design portfolio: identity, editorial, packaging and posters.",
+    "location": "Bogotá",
+    "availability": "Available 2027",
+    "address": "Cra. 7 #45-12, Bogotá, Colombia"
+  },
+  "hero": {
+    "eyebrow": "Graphic designer",
+    "lines": [
+      "Shapes that",
+      "stay <em>in the</em>",
+      "<em>memory.</em>"
+    ],
+    "intro": "Identity, editorial, packaging and poster design for brands that prefer to say less, but better."
+  },
+  "about": {
+    "lead": "I'm Daniel, a graphic designer with nine years of craft. I believe good design is noticed less than it is felt.",
+    "text": "I work between paper and screen: identity systems, books and magazines, packaging and posters. I always start with questions, sketch by hand, and keep building until everything unnecessary is gone.",
+    "stats": [
+      {
+        "n": "9",
+        "l": "years of experience"
+      },
+      {
+        "n": "64",
+        "l": "projects delivered"
+      },
+      {
+        "n": "12",
+        "l": "countries reached"
+      }
+    ],
+    "process": [
+      {
+        "t": "Listen",
+        "d": "Interviews, references and an honest brief."
+      },
+      {
+        "t": "Explore",
+        "d": "Sketches, typography and three distinct directions."
+      },
+      {
+        "t": "Build",
+        "d": "System, grid and refined key pieces."
+      },
+      {
+        "t": "Deliver",
+        "d": "Files, usage guide and ongoing support."
+      }
+    ],
+    "awards": [
+      {
+        "y": 2026,
+        "t": "Bronze — Lápiz Andino Awards, Identity"
+      },
+      {
+        "y": 2025,
+        "t": "Honorable mention — Latin American Design Biennial"
+      },
+      {
+        "y": 2024,
+        "t": "Finalist — Applied Typography, Madrid"
+      },
+      {
+        "y": 2023,
+        "t": "Official selection — Ibero-American Poster"
+      }
+    ]
+  },
+  "categories": {
+    "identity": "Identity",
+    "editorial": "Editorial",
+    "packaging": "Packaging",
+    "poster": "Posters",
+    "digital": "Digital"
+  },
+  "projects": {
+    "casa-alba": {
+      "description": "Identity system for a boutique hotel in Cartagena: monogram, warm palette and signage.",
+      "tags": [
+        "Logotype",
+        "Signage",
+        "Stationery"
+      ]
+    },
+    "marea-viva": {
+      "description": "A poster series for a coastal music festival. Simple shapes that move like waves.",
+      "tags": [
+        "Poster",
+        "Series",
+        "Print"
+      ]
+    },
+    "tierra-baja": {
+      "description": "A packaging line for single-origin coffee: flat inks on kraft and a modular grid.",
+      "tags": [
+        "Packaging",
+        "Illustration",
+        "Screen printing"
+      ]
+    },
+    "revista-umbral": {
+      "description": "Art direction and layout for a quarterly magazine of essays and photography.",
+      "tags": [
+        "Layout",
+        "Typography",
+        "Art direction"
+      ],
+      "title": "Umbral Magazine"
+    },
+    "olivar": {
+      "description": "Labels and gift box for extra virgin olive oil, with a typographic seal.",
+      "tags": [
+        "Label",
+        "Box"
+      ]
+    },
+    "pulso": {
+      "description": "Visual identity for a wellness app: pattern system and micro-animations.",
+      "tags": [
+        "UI",
+        "Patterns",
+        "Motion"
+      ]
+    },
+    "noches-de-jazz": {
+      "description": "Season posters for the annual jazz series at Teatro Mayor.",
+      "tags": [
+        "Poster",
+        "Typography"
+      ],
+      "title": "Jazz Nights"
+    },
+    "atlas-de-sal": {
+      "description": "Design for a photo-essay book: cover, interior pages and dust jacket.",
+      "tags": [
+        "Book",
+        "Photography"
+      ],
+      "title": "Salt Atlas"
+    },
+    "nodo": {
+      "description": "Brand for a coworking space, built around a node that connects.",
+      "tags": [
+        "Logotype",
+        "Brand guidelines"
+      ]
+    },
+    "raiz": {
+      "description": "Online store and social campaign for a local products brand.",
+      "tags": [
+        "Web",
+        "Social media",
+        "Campaign"
+      ]
+    }
+  },
+  "works": {
+    "tarjeta-de-temporada": {
+      "title": "Seasonal card"
+    },
+    "cartel-marea-b1": {
+      "title": "“Marea” poster, B1"
+    },
+    "menu-de-desayunos": {
+      "title": "Breakfast menu"
+    },
+    "etiqueta-edicion-limitada": {
+      "title": "Limited edition label"
+    },
+    "portada-n-12": {
+      "title": "Cover no. 12"
+    },
+    "kit-de-redes-verano": {
+      "title": "“Summer” social media kit"
+    },
+    "afiche-conferencia": {
+      "title": "Conference poster"
+    },
+    "estuche-de-regalo": {
+      "title": "Gift box"
+    },
+    "isotipo-animado": {
+      "title": "Animated brand symbol"
+    },
+    "programa-de-mano": {
+      "title": "Printed program"
+    },
+    "senaletica-de-sala": {
+      "title": "Room signage"
+    },
+    "banner-web-raiz": {
+      "title": "“Raíz” web banner"
+    }
+  }
+}

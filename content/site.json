@@ -1,0 +1,375 @@
+{
+  "site": {
+    "name": "Daniel Alvarez",
+    "email": "hola@daniel.studio",
+    "social": [
+      {
+        "label": "Instagram",
+        "url": "#"
+      },
+      {
+        "label": "Behance",
+        "url": "#"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "#"
+      }
+    ],
+    "contactEndpoint": ""
+  },
+  "languages": [
+    {
+      "code": "es",
+      "short": "ES",
+      "label": "Español"
+    },
+    {
+      "code": "en",
+      "short": "EN",
+      "label": "English"
+    },
+    {
+      "code": "fr-CA",
+      "short": "FR",
+      "label": "Français (Canada)"
+    }
+  ],
+  "defaultLanguage": "es",
+  "about": {
+    "portrait": null
+  },
+  "categories": [
+    "identity",
+    "editorial",
+    "packaging",
+    "poster",
+    "digital"
+  ],
+  "palettes": {
+    "terracota": [
+      "#e9dccb",
+      "#c8553d",
+      "#1d1d1b",
+      "#f2b134"
+    ],
+    "oceano": [
+      "#dfe9ea",
+      "#12495c",
+      "#f26b4f",
+      "#f4efe4"
+    ],
+    "oliva": [
+      "#eceadb",
+      "#5d6b3a",
+      "#d9a441",
+      "#2a2a24"
+    ],
+    "noche": [
+      "#14141a",
+      "#f4e9d8",
+      "#7b6cf6",
+      "#ef5b7b"
+    ],
+    "rosa": [
+      "#f5dfe0",
+      "#d1405c",
+      "#2b2b6b",
+      "#fff6ea"
+    ],
+    "mono": [
+      "#efefef",
+      "#111111",
+      "#9a9a9a",
+      "#ffffff"
+    ],
+    "cobalto": [
+      "#e8ecf6",
+      "#2145d6",
+      "#f9c80e",
+      "#111111"
+    ],
+    "arena": [
+      "#efe3cf",
+      "#a6603a",
+      "#3e2a1f",
+      "#f7f1e6"
+    ]
+  },
+  "projects": [
+    {
+      "slug": "casa-alba",
+      "title": "Casa Alba",
+      "category": "identity",
+      "client": "Casa Alba Hotel",
+      "year": 2026,
+      "featured": true,
+      "image": null,
+      "images": [],
+      "art": {
+        "kind": "logo",
+        "palette": "terracota"
+      }
+    },
+    {
+      "slug": "marea-viva",
+      "title": "Marea Viva",
+      "category": "poster",
+      "client": "Festival Marea",
+      "year": 2026,
+      "featured": false,
+      "image": null,
+      "images": [],
+      "art": {
+        "kind": "poster",
+        "palette": "oceano"
+      }
+    },
+    {
+      "slug": "tierra-baja",
+      "title": "Tierra Baja",
+      "category": "packaging",
+      "client": "Café Tierra",
+      "year": 2025,
+      "featured": false,
+      "image": null,
+      "images": [],
+      "art": {
+        "kind": "pack",
+        "palette": "arena"
+      }
+    },
+    {
+      "slug": "revista-umbral",
+      "title": "Revista Umbral",
+      "category": "editorial",
+      "client": "Editorial Umbral",
+      "year": 2025,
+      "featured": true,
+      "image": null,
+      "images": [],
+      "art": {
+        "kind": "editorial",
+        "palette": "noche"
+      }
+    },
+    {
+      "slug": "olivar",
+      "title": "Olivar",
+      "category": "packaging",
+      "client": "Olivar Aceites",
+      "year": 2025,
+      "featured": false,
+      "image": null,
+      "images": [],
+      "art": {
+        "kind": "pack",
+        "palette": "oliva"
+      }
+    },
+    {
+      "slug": "pulso",
+      "title": "Pulso",
+      "category": "digital",
+      "client": "Pulso Salud",
+      "year": 2024,
+      "featured": false,
+      "image": null,
+      "images": [],
+      "art": {
+        "kind": "pattern",
+        "palette": "cobalto"
+      }
+    },
+    {
+      "slug": "noches-de-jazz",
+      "title": "Noches de Jazz",
+      "category": "poster",
+      "client": "Teatro Mayor",
+      "year": 2024,
+      "featured": false,
+      "image": null,
+      "images": [],
+      "art": {
+        "kind": "poster",
+        "palette": "rosa"
+      }
+    },
+    {
+      "slug": "atlas-de-sal",
+      "title": "Atlas de Sal",
+      "category": "editorial",
+      "client": "Editorial Umbral",
+      "year": 2024,
+      "featured": false,
+      "image": null,
+      "images": [],
+      "art": {
+        "kind": "editorial",
+        "palette": "terracota"
+      }
+    },
+    {
+      "slug": "nodo",
+      "title": "Nodo",
+      "category": "identity",
+      "client": "Nodo Coworking",
+      "year": 2023,
+      "featured": false,
+      "image": null,
+      "images": [],
+      "art": {
+        "kind": "logo",
+        "palette": "mono"
+      }
+    },
+    {
+      "slug": "raiz",
+      "title": "Raíz",
+      "category": "digital",
+      "client": "Café Tierra",
+      "year": 2023,
+      "featured": false,
+      "image": null,
+      "images": [],
+      "art": {
+        "kind": "pattern",
+        "palette": "oliva"
+      }
+    }
+  ],
+  "works": [
+    {
+      "id": "tarjeta-de-temporada",
+      "category": "identity",
+      "client": "Casa Alba Hotel",
+      "year": 2026,
+      "image": null,
+      "art": {
+        "kind": "logo",
+        "palette": "terracota"
+      }
+    },
+    {
+      "id": "cartel-marea-b1",
+      "category": "poster",
+      "client": "Festival Marea",
+      "year": 2026,
+      "image": null,
+      "art": {
+        "kind": "poster",
+        "palette": "oceano"
+      }
+    },
+    {
+      "id": "menu-de-desayunos",
+      "category": "editorial",
+      "client": "Casa Alba Hotel",
+      "year": 2026,
+      "image": null,
+      "art": {
+        "kind": "editorial",
+        "palette": "arena"
+      }
+    },
+    {
+      "id": "etiqueta-edicion-limitada",
+      "category": "packaging",
+      "client": "Café Tierra",
+      "year": 2025,
+      "image": null,
+      "art": {
+        "kind": "pack",
+        "palette": "terracota"
+      }
+    },
+    {
+      "id": "portada-n-12",
+      "category": "editorial",
+      "client": "Editorial Umbral",
+      "year": 2025,
+      "image": null,
+      "art": {
+        "kind": "editorial",
+        "palette": "noche"
+      }
+    },
+    {
+      "id": "kit-de-redes-verano",
+      "category": "digital",
+      "client": "Pulso Salud",
+      "year": 2025,
+      "image": null,
+      "art": {
+        "kind": "pattern",
+        "palette": "cobalto"
+      }
+    },
+    {
+      "id": "afiche-conferencia",
+      "category": "poster",
+      "client": "Nodo Coworking",
+      "year": 2024,
+      "image": null,
+      "art": {
+        "kind": "poster",
+        "palette": "mono"
+      }
+    },
+    {
+      "id": "estuche-de-regalo",
+      "category": "packaging",
+      "client": "Olivar Aceites",
+      "year": 2024,
+      "image": null,
+      "art": {
+        "kind": "pack",
+        "palette": "oliva"
+      }
+    },
+    {
+      "id": "isotipo-animado",
+      "category": "identity",
+      "client": "Pulso Salud",
+      "year": 2024,
+      "image": null,
+      "art": {
+        "kind": "logo",
+        "palette": "cobalto"
+      }
+    },
+    {
+      "id": "programa-de-mano",
+      "category": "editorial",
+      "client": "Teatro Mayor",
+      "year": 2023,
+      "image": null,
+      "art": {
+        "kind": "editorial",
+        "palette": "rosa"
+      }
+    },
+    {
+      "id": "senaletica-de-sala",
+      "category": "identity",
+      "client": "Nodo Coworking",
+      "year": 2023,
+      "image": null,
+      "art": {
+        "kind": "logo",
+        "palette": "mono"
+      }
+    },
+    {
+      "id": "banner-web-raiz",
+      "category": "digital",
+      "client": "Café Tierra",
+      "year": 2023,
+      "image": null,
+      "art": {
+        "kind": "pattern",
+        "palette": "oliva"
+      }
+    }
+  ]
+}

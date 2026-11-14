@@ -1,0 +1,257 @@
+{
+  "ui": {
+    "nav.label": "Principal",
+    "brand.home": "Inicio",
+    "nav.open": "Abrir menú",
+    "nav.close": "Cerrar menú",
+    "nav.about": "Acerca de",
+    "nav.bio": "Biografía",
+    "nav.process": "Proceso",
+    "nav.awards": "Premios",
+    "nav.projects": "Proyectos",
+    "nav.works": "Trabajos",
+    "nav.clients": "Clientes",
+    "nav.contact": "Contacto",
+    "lang.label": "Idioma",
+    "lang.changed": "Idioma: {name}",
+    "hero.cta": "Ver proyectos",
+    "projects.title": "Proyectos",
+    "projects.sub": "Casos completos, agrupados por disciplina.",
+    "projects.filter": "Filtrar proyectos",
+    "projects.all": "Todos",
+    "projects.empty": "Sin proyectos en esta selección.",
+    "projects.open": "Abrir {title}",
+    "filter.client": "Cliente: {name} ✕",
+    "works.title": "Trabajos",
+    "works.sub": "Piezas puntuales, ordenadas por año. Selecciónalas para verlas en grande.",
+    "works.open": "Abrir {title}",
+    "about.title": "Acerca de",
+    "about.process": "Proceso",
+    "about.awards": "Premios y menciones",
+    "clients.title": "Clientes",
+    "clients.sub": "Pulsa un nombre para ver su trabajo.",
+    "clients.projects.one": "{n} proyecto",
+    "clients.projects.other": "{n} proyectos",
+    "clients.misc": "Trabajos puntuales",
+    "contact.eyebrow": "¿Hablamos?",
+    "contact.studio": "Estudio",
+    "contact.social": "Redes",
+    "form.name": "Nombre",
+    "form.email": "Correo",
+    "form.message": "Mensaje",
+    "form.send": "Enviar",
+    "form.sending": "Enviando…",
+    "form.ok": "Gracias, {name}. Recibí tu mensaje y te respondo pronto.",
+    "form.fail": "No se pudo enviar: {error}. Escríbeme a {email}.",
+    "form.mailto": "Se abrirá tu aplicación de correo para enviar el mensaje.",
+    "form.subject": "Contacto desde el portafolio — {name}",
+    "err.name": "Nombre inválido",
+    "err.email": "Correo inválido",
+    "err.message": "El mensaje debe tener entre 10 y 3000 caracteres",
+    "err.rate": "Demasiados mensajes, inténtalo más tarde",
+    "err.generic": "Error al enviar",
+    "err.network": "Sin conexión con el servidor",
+    "footer.copy": "© {year} {name}",
+    "footer.top": "Volver arriba ↑",
+    "lb.label": "Detalle del proyecto",
+    "lb.close": "Cerrar ✕",
+    "lb.closeAria": "Cerrar",
+    "lb.prev": "Anterior",
+    "lb.next": "Siguiente",
+    "lb.image": "Imagen {n}",
+    "lb.workDesc": "Pieza puntual — {category}. Realizada para {client}."
+  },
+  "site": {
+    "title": "Daniel — Diseño gráfico",
+    "description": "Portafolio de diseño gráfico: identidad, editorial, packaging y cartelería.",
+    "location": "Bogotá",
+    "availability": "Disponible 2027",
+    "address": "Cra. 7 #45-12, Bogotá, Colombia"
+  },
+  "hero": {
+    "eyebrow": "Diseñador gráfico",
+    "lines": [
+      "Formas que",
+      "se quedan <em>en la</em>",
+      "<em>memoria.</em>"
+    ],
+    "intro": "Identidad, editorial, packaging y cartelería para marcas que prefieren decir menos, pero mejor."
+  },
+  "about": {
+    "lead": "Soy Daniel, diseñador gráfico con 9 años de oficio. Creo que un buen diseño se nota menos de lo que se siente.",
+    "text": "Trabajo entre el papel y la pantalla: sistemas de identidad, libros y revistas, empaques y carteles. Empiezo siempre con preguntas, dibujo a mano y construyo hasta que sobra todo lo que no hace falta.",
+    "stats": [
+      {
+        "n": "9",
+        "l": "años de experiencia"
+      },
+      {
+        "n": "64",
+        "l": "proyectos entregados"
+      },
+      {
+        "n": "12",
+        "l": "países alcanzados"
+      }
+    ],
+    "process": [
+      {
+        "t": "Escuchar",
+        "d": "Entrevistas, referencias y un brief honesto."
+      },
+      {
+        "t": "Explorar",
+        "d": "Bocetos, tipografía y tres caminos distintos."
+      },
+      {
+        "t": "Construir",
+        "d": "Sistema, retícula y piezas clave refinadas."
+      },
+      {
+        "t": "Entregar",
+        "d": "Archivos, guía de uso y acompañamiento."
+      }
+    ],
+    "awards": [
+      {
+        "y": 2026,
+        "t": "Bronce — Premios Lápiz Andino, Identidad"
+      },
+      {
+        "y": 2025,
+        "t": "Mención — Bienal de Diseño Latinoamericano"
+      },
+      {
+        "y": 2024,
+        "t": "Finalista — Tipografía Aplicada, Madrid"
+      },
+      {
+        "y": 2023,
+        "t": "Selección oficial — Cartel Iberoamericano"
+      }
+    ]
+  },
+  "categories": {
+    "identity": "Identidad",
+    "editorial": "Editorial",
+    "packaging": "Packaging",
+    "poster": "Cartelería",
+    "digital": "Digital"
+  },
+  "projects": {
+    "casa-alba": {
+      "description": "Sistema de identidad para un hotel boutique en Cartagena: monograma, paleta cálida y señalética.",
+      "tags": [
+        "Logotipo",
+        "Señalética",
+        "Papelería"
+      ]
+    },
+    "marea-viva": {
+      "description": "Serie de carteles para un festival de música costero. Formas simples que se mueven como olas.",
+      "tags": [
+        "Cartel",
+        "Serie",
+        "Impresión"
+      ]
+    },
+    "tierra-baja": {
+      "description": "Línea de empaques para café de origen: tintas planas sobre kraft y una retícula modular.",
+      "tags": [
+        "Empaque",
+        "Ilustración",
+        "Serigrafía"
+      ]
+    },
+    "revista-umbral": {
+      "description": "Dirección de arte y maquetación de una revista trimestral de ensayo y fotografía.",
+      "tags": [
+        "Maquetación",
+        "Tipografía",
+        "Dirección de arte"
+      ]
+    },
+    "olivar": {
+      "description": "Etiquetas y estuche para aceite de oliva virgen extra, con un sello tipográfico.",
+      "tags": [
+        "Etiqueta",
+        "Estuche"
+      ]
+    },
+    "pulso": {
+      "description": "Identidad visual para una app de bienestar: sistema de patrones y microanimaciones.",
+      "tags": [
+        "UI",
+        "Patrones",
+        "Motion"
+      ]
+    },
+    "noches-de-jazz": {
+      "description": "Afiches de temporada para el ciclo anual de jazz en el Teatro Mayor.",
+      "tags": [
+        "Cartel",
+        "Tipografía"
+      ]
+    },
+    "atlas-de-sal": {
+      "description": "Diseño de libro de ensayo fotográfico: portada, interiores y sobrecubierta.",
+      "tags": [
+        "Libro",
+        "Fotografía"
+      ]
+    },
+    "nodo": {
+      "description": "Marca para un espacio de trabajo compartido, basada en un nodo que se conecta.",
+      "tags": [
+        "Logotipo",
+        "Manual de marca"
+      ]
+    },
+    "raiz": {
+      "description": "Tienda en línea y campaña social para marca de productos locales.",
+      "tags": [
+        "Web",
+        "Redes",
+        "Campaña"
+      ]
+    }
+  },
+  "works": {
+    "tarjeta-de-temporada": {
+      "title": "Tarjeta de temporada"
+    },
+    "cartel-marea-b1": {
+      "title": "Cartel “Marea” B1"
+    },
+    "menu-de-desayunos": {
+      "title": "Menú de desayunos"
+    },
+    "etiqueta-edicion-limitada": {
+      "title": "Etiqueta edición limitada"
+    },
+    "portada-n-12": {
+      "title": "Portada nº 12"
+    },
+    "kit-de-redes-verano": {
+      "title": "Kit de redes “Verano”"
+    },
+    "afiche-conferencia": {
+      "title": "Afiche conferencia"
+    },
+    "estuche-de-regalo": {
+      "title": "Estuche de regalo"
+    },
+    "isotipo-animado": {
+      "title": "Isotipo animado"
+    },
+    "programa-de-mano": {
+      "title": "Programa de mano"
+    },
+    "senaletica-de-sala": {
+      "title": "Señalética de sala"
+    },
+    "banner-web-raiz": {
+      "title": "Banner web “Raíz”"
+    }
+  }
+}
