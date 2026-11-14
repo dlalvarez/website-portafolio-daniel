@@ -216,6 +216,13 @@ document.addEventListener('keydown',e=>{
   }
 });
 addEventListener('hashchange',()=>{if(location.hash.startsWith('#/proyecto/'))routeFromHash();else closeLb()});
+// Gestos táctiles: deslizar para cambiar de proyecto
+let sx=0,sy=0;
+lb.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});
+lb.addEventListener('touchend',e=>{
+  if(!isOpen)return;const dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;
+  if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)show(cur+(dx<0?1:-1));
+},{passive:true});
 $('.lb-close').addEventListener('click',closeLb);
 $('.lb-nav.prev').addEventListener('click',()=>show(cur-1));
 $('.lb-nav.next').addEventListener('click',()=>show(cur+1));

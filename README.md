@@ -8,6 +8,7 @@ Sitio de portafolio minimalista, sin dependencias ni paso de build. Todo el cont
 npm start                      # http://localhost:3000
 PORT=8080 npm start            # otro puerto
 npm run validate               # revisa site.json e imágenes antes de publicar
+npm run check:responsive       # 13 tamaños (320→2560, vertical y horizontal); requiere Playwright local
 ```
 
 Requiere Node ≥ 18. No abras `index.html` con doble clic: necesita el servidor para cargar `content/site.json` y para el formulario.
@@ -65,6 +66,17 @@ docker run -d --name portafolio -p 3000:3000 \
 
 Pon HTTPS delante (Caddy/Traefik/nginx). El volumen `data` conserva los mensajes. Nota: la imagen corre como usuario `node`; si montas una carpeta del host en `/app/data`, dale permisos de escritura a UID 1000.
 
+## Responsive
+
+Diseñado mobile-first en la práctica: sin scroll horizontal de 320 px a 2560+ px, vertical y horizontal.
+
+- **Menú:** desplegables al pasar el cursor/foco en escritorio; panel a pantalla completa con acordeones en ≤900 px.
+- **Visor:** pieza dimensionada con `dvh` (respeta las barras del navegador móvil); controles en barra superior en móvil; en teléfono horizontal, pieza a la izquierda y texto con scroll a la derecha; gesto de deslizar para cambiar de proyecto.
+- **Táctil:** zonas de toque ≥44 px, campos a 16 px (iOS no hace zoom), sin efectos hover "pegados".
+- **Pantallas con notch** (`viewport-fit=cover`, `env(safe-area-*)`) y **ultra-anchas** (contenido limitado a 1680 px).
+- Respeta `prefers-reduced-motion`.
+- Tras cambiar CSS, ejecuta `npm run check:responsive`.
+
 ## Estructura
 
 ```
@@ -74,7 +86,8 @@ script.js         render desde JSON, filtros, visor, formulario
 server.js         estático (lista blanca de rutas) + /api/contact
 content/site.json todo el contenido editable
 assets/           tus imágenes
-scripts/validate.js
+scripts/validate.js        valida contenido e imágenes
+scripts/check-responsive.js  regresión de responsive
 data/             mensajes recibidos (ignorado por git)
 ```
 

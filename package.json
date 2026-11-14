@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "description": "Portafolio de diseño gráfico (sin dependencias)",
-  "scripts": { "start": "node server.js", "validate": "node scripts/validate.js" },
+  "scripts": { "start": "node server.js", "validate": "node scripts/validate.js", "check:responsive": "node scripts/check-responsive.js" },
   "engines": { "node": ">=18" }
 }
