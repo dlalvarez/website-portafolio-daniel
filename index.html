@@ -4,7 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Daniel — Diseño gráfico</title>
-<meta name="description" content="Portafolio de diseño gráfico: identidad, editorial, packaging y cartelería. (Prototipo con datos ficticios)">
+<meta name="description" content="Portafolio de diseño gráfico: identidad, editorial, packaging y cartelería.">
+<meta name="theme-color" content="#f6f4ef">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Daniel — Diseño gráfico">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23151515%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -14,7 +18,7 @@
 <div class="curtain" aria-hidden="true"></div>
 
 <header class="site-header" id="top">
-  <a class="brand" href="#top" aria-label="Inicio">Daniel<span>®</span></a>
+  <a class="brand" href="#top" aria-label="Inicio"><b data-name>Daniel</b><span>®</span></a>
 
   <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
 
@@ -44,14 +48,10 @@
 
 <main>
   <section class="hero">
-    <p class="eyebrow reveal">Diseñador gráfico · Bogotá — Disponible 2027</p>
-    <h1 class="hero-title" aria-label="Formas que se quedan en la memoria">
-      <span class="line"><span>Formas que</span></span>
-      <span class="line"><span>se quedan <em>en la</em></span></span>
-      <span class="line"><span><em>memoria.</em></span></span>
-    </h1>
+    <p class="eyebrow reveal" data-hero-eyebrow></p>
+    <h1 class="hero-title" data-hero-title></h1>
     <div class="hero-foot reveal">
-      <p>Identidad, editorial, packaging y cartelería para marcas que prefieren decir menos, pero mejor.</p>
+      <p data-hero-intro></p>
       <a href="#proyectos" class="scroll-cue">Ver proyectos <span>↓</span></a>
     </div>
   </section>
@@ -78,34 +78,20 @@
     <div class="about-grid">
       <div class="about-portrait reveal" data-portrait aria-hidden="true"></div>
       <div class="about-text reveal">
-        <p class="lead">Soy Daniel, diseñador gráfico con 9 años de oficio. Creo que un buen diseño se nota menos de lo que se siente.</p>
-        <p>Trabajo entre el papel y la pantalla: sistemas de identidad, libros y revistas, empaques y carteles. Empiezo siempre con preguntas, dibujo a mano y construyo hasta que sobra todo lo que no hace falta.</p>
-        <dl class="stats">
-          <div><dt>9</dt><dd>años de experiencia</dd></div>
-          <div><dt>64</dt><dd>proyectos entregados</dd></div>
-          <div><dt>12</dt><dd>países alcanzados</dd></div>
-        </dl>
+        <p class="lead" data-lead></p>
+        <p data-about-text></p>
+        <dl class="stats" data-stats></dl>
       </div>
     </div>
 
     <div id="acerca-proceso" class="process reveal">
       <h3>Proceso</h3>
-      <ol>
-        <li><span>01</span><b>Escuchar</b><p>Entrevistas, referencias y un brief honesto.</p></li>
-        <li><span>02</span><b>Explorar</b><p>Bocetos, tipografía y tres caminos distintos.</p></li>
-        <li><span>03</span><b>Construir</b><p>Sistema, retícula y piezas clave refinadas.</p></li>
-        <li><span>04</span><b>Entregar</b><p>Archivos, guía de uso y acompañamiento.</p></li>
-      </ol>
+      <ol data-process></ol>
     </div>
 
     <div id="acerca-premios" class="awards reveal">
       <h3>Premios y menciones</h3>
-      <ul>
-        <li><span>2026</span>Bronce — Premios Lápiz Andino, Identidad</li>
-        <li><span>2025</span>Mención — Bienal de Diseño Latinoamericano</li>
-        <li><span>2024</span>Finalista — Tipografía Aplicada, Madrid</li>
-        <li><span>2023</span>Selección oficial — Cartel Iberoamericano</li>
-      </ul>
+      <ul data-awards></ul>
     </div>
   </section>
 
@@ -119,13 +105,15 @@
 
   <section id="contacto" class="section contact">
     <p class="eyebrow reveal">¿Hablamos?</p>
-    <a class="mail reveal" href="mailto:hola@daniel.studio">hola@daniel.studio</a>
+    <a class="mail reveal" data-mail href="#contacto"></a>
     <div class="contact-grid reveal">
-      <div><h4>Estudio</h4><p>Cra. 7 #45-12, Bogotá<br>Colombia</p></div>
-      <div><h4>Redes</h4><p><a href="#contacto">Instagram</a><br><a href="#contacto">Behance</a><br><a href="#contacto">LinkedIn</a></p></div>
+      <div><h4>Estudio</h4><p data-address></p></div>
+      <div><h4>Redes</h4><p data-social></p></div>
       <form class="form" data-form>
-        <label>Nombre<input required name="n" autocomplete="off"></label>
-        <label>Mensaje<textarea required name="m" rows="2"></textarea></label>
+        <label>Nombre<input required name="n" maxlength="120" autocomplete="name"></label>
+        <label>Correo<input required type="email" name="e" maxlength="200" autocomplete="email"></label>
+        <label>Mensaje<textarea required name="m" rows="2" minlength="10" maxlength="3000"></textarea></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button type="submit"><span>Enviar</span> →</button>
         <p class="form-ok" aria-live="polite"></p>
       </form>
@@ -134,7 +122,7 @@
 </main>
 
 <footer class="site-footer">
-  <span>© 2026 Daniel — Prototipo con datos ficticios</span>
+  <span data-footer></span>
   <a href="#top">Volver arriba ↑</a>
 </footer>
 
@@ -147,7 +135,7 @@
   <button class="lb-nav prev" aria-label="Anterior">←</button>
   <button class="lb-nav next" aria-label="Siguiente">→</button>
   <div class="lb-body">
-    <div class="lb-art" data-lb-art></div>
+    <div class="lb-media"><div class="lb-art" data-lb-art></div><div class="lb-thumbs" data-lb-thumbs></div></div>
     <div class="lb-info">
       <p class="lb-meta" data-lb-meta></p>
       <h3 data-lb-title></h3>

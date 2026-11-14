@@ -223,3 +223,17 @@ svg{display:block}
 /* El panel móvil no debe tapar la marca ni el botón */
 .brand,.burger{position:relative;z-index:2}
 .burger{position:relative}
+
+/* Imágenes reales */
+.card-art img,.peek img,.about-portrait img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s var(--ease)}
+.card:hover .card-art img{transform:scale(1.06)}
+.lb-media{display:grid;gap:12px;justify-items:center;min-width:0}
+.lb-art img{width:100%;height:100%;object-fit:contain;background:var(--card)}
+.lb-thumbs{display:flex;gap:8px}
+.lb-thumbs button{width:56px;height:56px;border-radius:4px;overflow:hidden;opacity:.55;transition:opacity .3s}
+.lb-thumbs button:hover{opacity:1}
+.lb-thumbs img{width:100%;height:100%;object-fit:cover}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.form button:disabled{opacity:.5;cursor:wait}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.brand b{font-weight:400}
