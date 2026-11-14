@@ -18,30 +18,33 @@
 <div class="curtain" aria-hidden="true"></div>
 
 <header class="site-header" id="top">
-  <a class="brand" href="#top" aria-label="Inicio"><b data-name>Daniel</b><span>®</span></a>
+  <a class="brand" href="#top" data-i18n-attr="aria-label:brand.home" aria-label="Inicio"><b data-name>Daniel</b><span>®</span></a>
 
-  <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+  <!-- Selector de idioma: siempre visible (escritorio y móvil), se genera desde site.json -->
+  <div class="lang" role="group" data-lang-switch data-i18n-attr="aria-label:lang.label" aria-label="Idioma"></div>
 
-  <nav id="nav" class="nav" aria-label="Principal">
+  <button class="burger" aria-label="Abrir menú" data-i18n-attr="aria-label:nav.open" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+
+  <nav id="nav" class="nav" aria-label="Principal" data-i18n-attr="aria-label:nav.label">
     <ul>
       <li class="has-sub">
-        <button class="nav-link" aria-expanded="false">Acerca de <b></b></button>
+        <button class="nav-link" aria-expanded="false"><span data-i18n="nav.about">Acerca de</span> <b></b></button>
         <div class="sub">
-          <a href="#acerca">Biografía</a>
-          <a href="#acerca-proceso">Proceso</a>
-          <a href="#acerca-premios">Premios</a>
+          <a href="#acerca" data-i18n="nav.bio">Biografía</a>
+          <a href="#acerca-proceso" data-i18n="nav.process">Proceso</a>
+          <a href="#acerca-premios" data-i18n="nav.awards">Premios</a>
         </div>
       </li>
       <li class="has-sub">
-        <button class="nav-link" aria-expanded="false">Proyectos <b></b></button>
+        <button class="nav-link" aria-expanded="false"><span data-i18n="nav.projects">Proyectos</span> <b></b></button>
         <div class="sub" data-cats></div>
       </li>
       <li class="has-sub">
-        <button class="nav-link" aria-expanded="false">Trabajos <b></b></button>
+        <button class="nav-link" aria-expanded="false"><span data-i18n="nav.works">Trabajos</span> <b></b></button>
         <div class="sub" data-years></div>
       </li>
-      <li><a class="nav-link" href="#clientes">Clientes</a></li>
-      <li><a class="nav-link nav-cta" href="#contacto">Contacto</a></li>
+      <li><a class="nav-link" href="#clientes" data-i18n="nav.clients">Clientes</a></li>
+      <li><a class="nav-link nav-cta" href="#contacto" data-i18n="nav.contact">Contacto</a></li>
     </ul>
   </nav>
 </header>
@@ -52,29 +55,29 @@
     <h1 class="hero-title" data-hero-title></h1>
     <div class="hero-foot reveal">
       <p data-hero-intro></p>
-      <a href="#proyectos" class="scroll-cue">Ver proyectos <span>↓</span></a>
+      <a href="#proyectos" class="scroll-cue"><span data-i18n="hero.cta">Ver proyectos</span> <span>↓</span></a>
     </div>
   </section>
 
   <section id="proyectos" class="section">
     <div class="section-head reveal">
-      <h2>Proyectos <sup data-count></sup></h2>
-      <p>Casos completos, agrupados por disciplina.</p>
+      <h2><span data-i18n="projects.title">Proyectos</span> <sup data-count></sup></h2>
+      <p data-i18n="projects.sub">Casos completos, agrupados por disciplina.</p>
     </div>
-    <div class="filters reveal" role="tablist" aria-label="Filtrar proyectos" data-filters></div>
+    <div class="filters reveal" role="tablist" data-i18n-attr="aria-label:projects.filter" aria-label="Filtrar proyectos" data-filters></div>
     <div class="grid" data-grid></div>
   </section>
 
   <section id="trabajos" class="section">
     <div class="section-head reveal">
-      <h2>Trabajos <sup data-wcount></sup></h2>
-      <p>Piezas puntuales, ordenadas por año. Selecciónalas para verlas en grande.</p>
+      <h2><span data-i18n="works.title">Trabajos</span> <sup data-wcount></sup></h2>
+      <p data-i18n="works.sub">Piezas puntuales, ordenadas por año. Selecciónalas para verlas en grande.</p>
     </div>
     <div class="works" data-works></div>
   </section>
 
   <section id="acerca" class="section about">
-    <div class="section-head reveal"><h2>Acerca de</h2></div>
+    <div class="section-head reveal"><h2 data-i18n="about.title">Acerca de</h2></div>
     <div class="about-grid">
       <div class="about-portrait reveal" data-portrait aria-hidden="true"></div>
       <div class="about-text reveal">
@@ -85,36 +88,36 @@
     </div>
 
     <div id="acerca-proceso" class="process reveal">
-      <h3>Proceso</h3>
+      <h3 data-i18n="about.process">Proceso</h3>
       <ol data-process></ol>
     </div>
 
     <div id="acerca-premios" class="awards reveal">
-      <h3>Premios y menciones</h3>
+      <h3 data-i18n="about.awards">Premios y menciones</h3>
       <ul data-awards></ul>
     </div>
   </section>
 
   <section id="clientes" class="section">
     <div class="section-head reveal">
-      <h2>Clientes <sup data-ccount></sup></h2>
-      <p>Pulsa un nombre para ver su trabajo.</p>
+      <h2><span data-i18n="clients.title">Clientes</span> <sup data-ccount></sup></h2>
+      <p data-i18n="clients.sub">Pulsa un nombre para ver su trabajo.</p>
     </div>
     <ul class="clients" data-clients></ul>
   </section>
 
   <section id="contacto" class="section contact">
-    <p class="eyebrow reveal">¿Hablamos?</p>
+    <p class="eyebrow reveal" data-i18n="contact.eyebrow">¿Hablamos?</p>
     <a class="mail reveal" data-mail href="#contacto"></a>
     <div class="contact-grid reveal">
-      <div><h4>Estudio</h4><p data-address></p></div>
-      <div><h4>Redes</h4><p data-social></p></div>
+      <div><h4 data-i18n="contact.studio">Estudio</h4><p data-address></p></div>
+      <div><h4 data-i18n="contact.social">Redes</h4><p data-social></p></div>
       <form class="form" data-form>
-        <label>Nombre<input required name="n" maxlength="120" autocomplete="name"></label>
-        <label>Correo<input required type="email" name="e" maxlength="200" autocomplete="email"></label>
-        <label>Mensaje<textarea required name="m" rows="2" minlength="10" maxlength="3000"></textarea></label>
+        <label><span data-i18n="form.name">Nombre</span><input required name="n" maxlength="120" autocomplete="name"></label>
+        <label><span data-i18n="form.email">Correo</span><input required type="email" name="e" maxlength="200" autocomplete="email"></label>
+        <label><span data-i18n="form.message">Mensaje</span><textarea required name="m" rows="2" minlength="10" maxlength="3000"></textarea></label>
         <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <button type="submit"><span>Enviar</span> →</button>
+        <button type="submit"><span data-i18n="form.send">Enviar</span> →</button>
         <p class="form-ok" aria-live="polite"></p>
       </form>
     </div>
@@ -123,17 +126,17 @@
 
 <footer class="site-footer">
   <span data-footer></span>
-  <a href="#top">Volver arriba ↑</a>
+  <a href="#top" data-i18n="footer.top">Volver arriba ↑</a>
 </footer>
 
 <!-- Vista previa flotante (trabajos) -->
 <div class="peek" data-peek aria-hidden="true"></div>
 
 <!-- Visor -->
-<div class="lightbox" data-lb aria-hidden="true" role="dialog" aria-modal="true" aria-label="Detalle del proyecto">
-  <button class="lb-close" aria-label="Cerrar">Cerrar ✕</button>
-  <button class="lb-nav prev" aria-label="Anterior">←</button>
-  <button class="lb-nav next" aria-label="Siguiente">→</button>
+<div class="lightbox" data-lb aria-hidden="true" role="dialog" aria-modal="true" data-i18n-attr="aria-label:lb.label" aria-label="Detalle del proyecto">
+  <button class="lb-close" data-i18n="lb.close" data-i18n-attr="aria-label:lb.closeAria" aria-label="Cerrar">Cerrar ✕</button>
+  <button class="lb-nav prev" data-i18n-attr="aria-label:lb.prev" aria-label="Anterior">←</button>
+  <button class="lb-nav next" data-i18n-attr="aria-label:lb.next" aria-label="Siguiente">→</button>
   <div class="lb-body">
     <div class="lb-media"><div class="lb-art" data-lb-art></div><div class="lb-thumbs" data-lb-thumbs></div></div>
     <div class="lb-info">
@@ -145,6 +148,7 @@
   </div>
 </div>
 
+<p class="sr-only" aria-live="polite" data-lang-status></p>
 <script src="script.js"></script>
 </body>
 </html>

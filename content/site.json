@@ -1,12 +1,7 @@
 {
   "site": {
     "name": "Daniel",
-    "title": "Daniel — Diseño gráfico",
-    "description": "Portafolio de diseño gráfico: identidad, editorial, packaging y cartelería.",
-    "location": "Bogotá",
-    "availability": "Disponible 2027",
     "email": "hola@daniel.studio",
-    "address": "Cra. 7 #45-12, Bogotá, Colombia",
     "social": [
       {
         "label": "Instagram",
@@ -23,12 +18,33 @@
     ],
     "contactEndpoint": ""
   },
+  "languages": [
+    {
+      "code": "es",
+      "short": "ES",
+      "label": "Español"
+    },
+    {
+      "code": "en",
+      "short": "EN",
+      "label": "English"
+    },
+    {
+      "code": "fr-CA",
+      "short": "FR",
+      "label": "Français (Canada)"
+    }
+  ],
+  "defaultLanguage": "es",
+  "about": {
+    "portrait": null
+  },
   "categories": [
-    "Identidad",
-    "Editorial",
-    "Packaging",
-    "Cartelería",
-    "Digital"
+    "identity",
+    "editorial",
+    "packaging",
+    "poster",
+    "digital"
   ],
   "palettes": {
     "terracota": [
@@ -84,15 +100,9 @@
     {
       "slug": "casa-alba",
       "title": "Casa Alba",
-      "category": "Identidad",
+      "category": "identity",
       "client": "Casa Alba Hotel",
       "year": 2026,
-      "description": "Sistema de identidad para un hotel boutique en Cartagena: monograma, paleta cálida y señalética.",
-      "tags": [
-        "Logotipo",
-        "Señalética",
-        "Papelería"
-      ],
       "featured": true,
       "image": null,
       "images": [],
@@ -104,15 +114,9 @@
     {
       "slug": "marea-viva",
       "title": "Marea Viva",
-      "category": "Cartelería",
+      "category": "poster",
       "client": "Festival Marea",
       "year": 2026,
-      "description": "Serie de carteles para un festival de música costero. Formas simples que se mueven como olas.",
-      "tags": [
-        "Cartel",
-        "Serie",
-        "Impresión"
-      ],
       "featured": false,
       "image": null,
       "images": [],
@@ -124,15 +128,9 @@
     {
       "slug": "tierra-baja",
       "title": "Tierra Baja",
-      "category": "Packaging",
+      "category": "packaging",
       "client": "Café Tierra",
       "year": 2025,
-      "description": "Línea de empaques para café de origen: tintas planas sobre kraft y una retícula modular.",
-      "tags": [
-        "Empaque",
-        "Ilustración",
-        "Serigrafía"
-      ],
       "featured": false,
       "image": null,
       "images": [],
@@ -144,15 +142,9 @@
     {
       "slug": "revista-umbral",
       "title": "Revista Umbral",
-      "category": "Editorial",
+      "category": "editorial",
       "client": "Editorial Umbral",
       "year": 2025,
-      "description": "Dirección de arte y maquetación de una revista trimestral de ensayo y fotografía.",
-      "tags": [
-        "Maquetación",
-        "Tipografía",
-        "Dirección de arte"
-      ],
       "featured": true,
       "image": null,
       "images": [],
@@ -164,14 +156,9 @@
     {
       "slug": "olivar",
       "title": "Olivar",
-      "category": "Packaging",
+      "category": "packaging",
       "client": "Olivar Aceites",
       "year": 2025,
-      "description": "Etiquetas y estuche para aceite de oliva virgen extra, con un sello tipográfico.",
-      "tags": [
-        "Etiqueta",
-        "Estuche"
-      ],
       "featured": false,
       "image": null,
       "images": [],
@@ -183,15 +170,9 @@
     {
       "slug": "pulso",
       "title": "Pulso",
-      "category": "Digital",
+      "category": "digital",
       "client": "Pulso Salud",
       "year": 2024,
-      "description": "Identidad visual para una app de bienestar: sistema de patrones y microanimaciones.",
-      "tags": [
-        "UI",
-        "Patrones",
-        "Motion"
-      ],
       "featured": false,
       "image": null,
       "images": [],
@@ -203,14 +184,9 @@
     {
       "slug": "noches-de-jazz",
       "title": "Noches de Jazz",
-      "category": "Cartelería",
+      "category": "poster",
       "client": "Teatro Mayor",
       "year": 2024,
-      "description": "Afiches de temporada para el ciclo anual de jazz en el Teatro Mayor.",
-      "tags": [
-        "Cartel",
-        "Tipografía"
-      ],
       "featured": false,
       "image": null,
       "images": [],
@@ -222,14 +198,9 @@
     {
       "slug": "atlas-de-sal",
       "title": "Atlas de Sal",
-      "category": "Editorial",
+      "category": "editorial",
       "client": "Editorial Umbral",
       "year": 2024,
-      "description": "Diseño de libro de ensayo fotográfico: portada, interiores y sobrecubierta.",
-      "tags": [
-        "Libro",
-        "Fotografía"
-      ],
       "featured": false,
       "image": null,
       "images": [],
@@ -241,14 +212,9 @@
     {
       "slug": "nodo",
       "title": "Nodo",
-      "category": "Identidad",
+      "category": "identity",
       "client": "Nodo Coworking",
       "year": 2023,
-      "description": "Marca para un espacio de trabajo compartido, basada en un nodo que se conecta.",
-      "tags": [
-        "Logotipo",
-        "Manual de marca"
-      ],
       "featured": false,
       "image": null,
       "images": [],
@@ -260,15 +226,9 @@
     {
       "slug": "raiz",
       "title": "Raíz",
-      "category": "Digital",
+      "category": "digital",
       "client": "Café Tierra",
       "year": 2023,
-      "description": "Tienda en línea y campaña social para marca de productos locales.",
-      "tags": [
-        "Web",
-        "Redes",
-        "Campaña"
-      ],
       "featured": false,
       "image": null,
       "images": [],
@@ -280,10 +240,10 @@
   ],
   "works": [
     {
-      "title": "Tarjeta de temporada",
-      "year": 2026,
-      "category": "Papelería",
+      "id": "tarjeta-de-temporada",
+      "category": "identity",
       "client": "Casa Alba Hotel",
+      "year": 2026,
       "image": null,
       "art": {
         "kind": "logo",
@@ -291,10 +251,10 @@
       }
     },
     {
-      "title": "Cartel “Marea” B1",
-      "year": 2026,
-      "category": "Cartelería",
+      "id": "cartel-marea-b1",
+      "category": "poster",
       "client": "Festival Marea",
+      "year": 2026,
       "image": null,
       "art": {
         "kind": "poster",
@@ -302,10 +262,10 @@
       }
     },
     {
-      "title": "Menú de desayunos",
-      "year": 2026,
-      "category": "Editorial",
+      "id": "menu-de-desayunos",
+      "category": "editorial",
       "client": "Casa Alba Hotel",
+      "year": 2026,
       "image": null,
       "art": {
         "kind": "editorial",
@@ -313,10 +273,10 @@
       }
     },
     {
-      "title": "Etiqueta edición limitada",
-      "year": 2025,
-      "category": "Packaging",
+      "id": "etiqueta-edicion-limitada",
+      "category": "packaging",
       "client": "Café Tierra",
+      "year": 2025,
       "image": null,
       "art": {
         "kind": "pack",
@@ -324,10 +284,10 @@
       }
     },
     {
-      "title": "Portada nº 12",
-      "year": 2025,
-      "category": "Editorial",
+      "id": "portada-n-12",
+      "category": "editorial",
       "client": "Editorial Umbral",
+      "year": 2025,
       "image": null,
       "art": {
         "kind": "editorial",
@@ -335,10 +295,10 @@
       }
     },
     {
-      "title": "Kit de redes “Verano”",
-      "year": 2025,
-      "category": "Digital",
+      "id": "kit-de-redes-verano",
+      "category": "digital",
       "client": "Pulso Salud",
+      "year": 2025,
       "image": null,
       "art": {
         "kind": "pattern",
@@ -346,10 +306,10 @@
       }
     },
     {
-      "title": "Afiche conferencia",
-      "year": 2024,
-      "category": "Cartelería",
+      "id": "afiche-conferencia",
+      "category": "poster",
       "client": "Nodo Coworking",
+      "year": 2024,
       "image": null,
       "art": {
         "kind": "poster",
@@ -357,10 +317,10 @@
       }
     },
     {
-      "title": "Estuche de regalo",
-      "year": 2024,
-      "category": "Packaging",
+      "id": "estuche-de-regalo",
+      "category": "packaging",
       "client": "Olivar Aceites",
+      "year": 2024,
       "image": null,
       "art": {
         "kind": "pack",
@@ -368,10 +328,10 @@
       }
     },
     {
-      "title": "Isotipo animado",
-      "year": 2024,
-      "category": "Identidad",
+      "id": "isotipo-animado",
+      "category": "identity",
       "client": "Pulso Salud",
+      "year": 2024,
       "image": null,
       "art": {
         "kind": "logo",
@@ -379,10 +339,10 @@
       }
     },
     {
-      "title": "Programa de mano",
-      "year": 2023,
-      "category": "Editorial",
+      "id": "programa-de-mano",
+      "category": "editorial",
       "client": "Teatro Mayor",
+      "year": 2023,
       "image": null,
       "art": {
         "kind": "editorial",
@@ -390,10 +350,10 @@
       }
     },
     {
-      "title": "Señalética de sala",
-      "year": 2023,
-      "category": "Identidad",
+      "id": "senaletica-de-sala",
+      "category": "identity",
       "client": "Nodo Coworking",
+      "year": 2023,
       "image": null,
       "art": {
         "kind": "logo",
@@ -401,79 +361,15 @@
       }
     },
     {
-      "title": "Banner web “Raíz”",
-      "year": 2023,
-      "category": "Digital",
+      "id": "banner-web-raiz",
+      "category": "digital",
       "client": "Café Tierra",
+      "year": 2023,
       "image": null,
       "art": {
         "kind": "pattern",
         "palette": "oliva"
       }
     }
-  ],
-  "hero": {
-    "eyebrow": "Diseñador gráfico",
-    "lines": [
-      "Formas que",
-      "se quedan <em>en la</em>",
-      "<em>memoria.</em>"
-    ],
-    "intro": "Identidad, editorial, packaging y cartelería para marcas que prefieren decir menos, pero mejor."
-  },
-  "about": {
-    "portrait": null,
-    "lead": "Soy Daniel, diseñador gráfico con 9 años de oficio. Creo que un buen diseño se nota menos de lo que se siente.",
-    "text": "Trabajo entre el papel y la pantalla: sistemas de identidad, libros y revistas, empaques y carteles. Empiezo siempre con preguntas, dibujo a mano y construyo hasta que sobra todo lo que no hace falta.",
-    "stats": [
-      {
-        "n": "9",
-        "l": "años de experiencia"
-      },
-      {
-        "n": "64",
-        "l": "proyectos entregados"
-      },
-      {
-        "n": "12",
-        "l": "países alcanzados"
-      }
-    ],
-    "process": [
-      {
-        "t": "Escuchar",
-        "d": "Entrevistas, referencias y un brief honesto."
-      },
-      {
-        "t": "Explorar",
-        "d": "Bocetos, tipografía y tres caminos distintos."
-      },
-      {
-        "t": "Construir",
-        "d": "Sistema, retícula y piezas clave refinadas."
-      },
-      {
-        "t": "Entregar",
-        "d": "Archivos, guía de uso y acompañamiento."
-      }
-    ],
-    "awards": [
-      {
-        "y": 2026,
-        "t": "Bronce — Premios Lápiz Andino, Identidad"
-      },
-      {
-        "y": 2025,
-        "t": "Mención — Bienal de Diseño Latinoamericano"
-      },
-      {
-        "y": 2024,
-        "t": "Finalista — Tipografía Aplicada, Madrid"
-      },
-      {
-        "y": 2023,
-        "t": "Selección oficial — Cartel Iberoamericano"
-      }
-    ]
-  }
+  ]
 }

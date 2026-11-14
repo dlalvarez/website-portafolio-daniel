@@ -66,21 +66,22 @@ function readBody(req, max = 10_000) {
 
 async function contact(req, res) {
   const ip = (TRUST_PROXY && req.headers['x-forwarded-for']?.split(',')[0].trim()) || req.socket.remoteAddress;
-  if (!/^application\/json/.test(req.headers['content-type'] || '')) return json(res, 415, { error: 'Content-Type inválido' });
+  if (!/^application\/json/.test(req.headers['content-type'] || '')) return json(res, 415, { error: 'Content-Type inválido', code: 'type' });
   let b;
-  try { b = JSON.parse(await readBody(req)); } catch (e) { return json(res, e.code || 400, { error: 'Solicitud inválida' }); }
+  try { b = JSON.parse(await readBody(req)); } catch (e) { return json(res, e.code || 400, { error: 'Solicitud inválida', code: 'request' }); }
   if (b.website) return json(res, 200, { ok: true }); // honeypot: se descarta en silencio
   const name = String(b.name || '').trim(), email = String(b.email || '').trim(), message = String(b.message || '').trim();
-  if (name.length < 1 || name.length > 120) return json(res, 400, { error: 'Nombre inválido' });
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 200) return json(res, 400, { error: 'Correo inválido' });
-  if (message.length < 10 || message.length > 3000) return json(res, 400, { error: 'El mensaje debe tener entre 10 y 3000 caracteres' });
-  if (limited(ip)) return json(res, 429, { error: 'Demasiados mensajes, inténtalo más tarde' });
+  if (name.length < 1 || name.length > 120) return json(res, 400, { error: 'Nombre inválido', code: 'name' });
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 200) return json(res, 400, { error: 'Correo inválido', code: 'email' });
+  if (message.length < 10 || message.length > 3000) return json(res, 400, { error: 'El mensaje debe tener entre 10 y 3000 caracteres', code: 'message' });
+  if (limited(ip)) return json(res, 429, { error: 'Demasiados mensajes, inténtalo más tarde', code: 'rate' });
 
-  const entry = { at: new Date().toISOString(), name, email, message };
+  const lang = /^[a-z]{2}(-[A-Za-z]{2})?$/.test(b.lang) ? b.lang : 'es'; // idioma desde el que escribió (para responderle en el mismo)
+  const entry = { at: new Date().toISOString(), lang, name, email, message };
   try {
     fs.mkdirSync(DATA_DIR, { recursive: true });
     fs.appendFileSync(path.join(DATA_DIR, 'messages.jsonl'), JSON.stringify(entry) + '\n', { mode: 0o600 });
-  } catch (e) { console.error('No se pudo guardar el mensaje:', e.message); return json(res, 500, { error: 'No se pudo guardar el mensaje' }); }
+  } catch (e) { console.error('No se pudo guardar el mensaje:', e.message); return json(res, 500, { error: 'No se pudo guardar el mensaje', code: 'save' }); }
 
   if (WEBHOOK) { // aviso opcional (n8n, etc.); un fallo aquí no pierde el mensaje, ya está guardado
     fetch(WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(entry), signal: AbortSignal.timeout(8000) })
@@ -93,8 +94,8 @@ async function contact(req, res) {
 const server = http.createServer((req, res) => {
   const url = req.url.split('?')[0];
   if (url === '/api/contact') {
-    if (req.method !== 'POST') return json(res, 405, { error: 'Método no permitido' });
-    return contact(req, res).catch(e => { console.error(e); json(res, 500, { error: 'Error interno' }); });
+    if (req.method !== 'POST') return json(res, 405, { error: 'Método no permitido', code: 'method' });
+    return contact(req, res).catch(e => { console.error(e); json(res, 500, { error: 'Error interno', code: 'internal' }); });
   }
   if (req.method !== 'GET' && req.method !== 'HEAD') return send(res, 405, 'Método no permitido');
   serveStatic(req, res);
