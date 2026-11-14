@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel — Diseño gráfico</title>
+<meta name="description" content="Portafolio de diseño gráfico: identidad, editorial, packaging y cartelería. (Prototipo con datos ficticios)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="curtain" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <a class="brand" href="#top" aria-label="Inicio">Daniel<span>®</span></a>
+
+  <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+
+  <nav id="nav" class="nav" aria-label="Principal">
+    <ul>
+      <li class="has-sub">
+        <button class="nav-link" aria-expanded="false">Acerca de <b></b></button>
+        <div class="sub">
+          <a href="#acerca">Biografía</a>
+          <a href="#acerca-proceso">Proceso</a>
+          <a href="#acerca-premios">Premios</a>
+        </div>
+      </li>
+      <li class="has-sub">
+        <button class="nav-link" aria-expanded="false">Proyectos <b></b></button>
+        <div class="sub" data-cats></div>
+      </li>
+      <li class="has-sub">
+        <button class="nav-link" aria-expanded="false">Trabajos <b></b></button>
+        <div class="sub" data-years></div>
+      </li>
+      <li><a class="nav-link" href="#clientes">Clientes</a></li>
+      <li><a class="nav-link nav-cta" href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow reveal">Diseñador gráfico · Bogotá — Disponible 2027</p>
+    <h1 class="hero-title" aria-label="Formas que se quedan en la memoria">
+      <span class="line"><span>Formas que</span></span>
+      <span class="line"><span>se quedan <em>en la</em></span></span>
+      <span class="line"><span><em>memoria.</em></span></span>
+    </h1>
+    <div class="hero-foot reveal">
+      <p>Identidad, editorial, packaging y cartelería para marcas que prefieren decir menos, pero mejor.</p>
+      <a href="#proyectos" class="scroll-cue">Ver proyectos <span>↓</span></a>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section">
+    <div class="section-head reveal">
+      <h2>Proyectos <sup data-count></sup></h2>
+      <p>Casos completos, agrupados por disciplina.</p>
+    </div>
+    <div class="filters reveal" role="tablist" aria-label="Filtrar proyectos" data-filters></div>
+    <div class="grid" data-grid></div>
+  </section>
+
+  <section id="trabajos" class="section">
+    <div class="section-head reveal">
+      <h2>Trabajos <sup data-wcount></sup></h2>
+      <p>Piezas puntuales, ordenadas por año. Pasa el cursor para previsualizar.</p>
+    </div>
+    <div class="works" data-works></div>
+  </section>
+
+  <section id="acerca" class="section about">
+    <div class="section-head reveal"><h2>Acerca de</h2></div>
+    <div class="about-grid">
+      <div class="about-portrait reveal" data-portrait aria-hidden="true"></div>
+      <div class="about-text reveal">
+        <p class="lead">Soy Daniel, diseñador gráfico con 9 años de oficio. Creo que un buen diseño se nota menos de lo que se siente.</p>
+        <p>Trabajo entre el papel y la pantalla: sistemas de identidad, libros y revistas, empaques y carteles. Empiezo siempre con preguntas, dibujo a mano y construyo hasta que sobra todo lo que no hace falta.</p>
+        <dl class="stats">
+          <div><dt>9</dt><dd>años de experiencia</dd></div>
+          <div><dt>64</dt><dd>proyectos entregados</dd></div>
+          <div><dt>12</dt><dd>países alcanzados</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div id="acerca-proceso" class="process reveal">
+      <h3>Proceso</h3>
+      <ol>
+        <li><span>01</span><b>Escuchar</b><p>Entrevistas, referencias y un brief honesto.</p></li>
+        <li><span>02</span><b>Explorar</b><p>Bocetos, tipografía y tres caminos distintos.</p></li>
+        <li><span>03</span><b>Construir</b><p>Sistema, retícula y piezas clave refinadas.</p></li>
+        <li><span>04</span><b>Entregar</b><p>Archivos, guía de uso y acompañamiento.</p></li>
+      </ol>
+    </div>
+
+    <div id="acerca-premios" class="awards reveal">
+      <h3>Premios y menciones</h3>
+      <ul>
+        <li><span>2026</span>Bronce — Premios Lápiz Andino, Identidad</li>
+        <li><span>2025</span>Mención — Bienal de Diseño Latinoamericano</li>
+        <li><span>2024</span>Finalista — Tipografía Aplicada, Madrid</li>
+        <li><span>2023</span>Selección oficial — Cartel Iberoamericano</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="clientes" class="section">
+    <div class="section-head reveal">
+      <h2>Clientes <sup data-ccount></sup></h2>
+      <p>Pulsa un nombre para ver su trabajo.</p>
+    </div>
+    <ul class="clients" data-clients></ul>
+  </section>
+
+  <section id="contacto" class="section contact">
+    <p class="eyebrow reveal">¿Hablamos?</p>
+    <a class="mail reveal" href="mailto:hola@daniel.studio">hola@daniel.studio</a>
+    <div class="contact-grid reveal">
+      <div><h4>Estudio</h4><p>Cra. 7 #45-12, Bogotá<br>Colombia</p></div>
+      <div><h4>Redes</h4><p><a href="#contacto">Instagram</a><br><a href="#contacto">Behance</a><br><a href="#contacto">LinkedIn</a></p></div>
+      <form class="form" data-form>
+        <label>Nombre<input required name="n" autocomplete="off"></label>
+        <label>Mensaje<textarea required name="m" rows="2"></textarea></label>
+        <button type="submit"><span>Enviar</span> →</button>
+        <p class="form-ok" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Daniel — Prototipo con datos ficticios</span>
+  <a href="#top">Volver arriba ↑</a>
+</footer>
+
+<!-- Vista previa flotante (trabajos) -->
+<div class="peek" data-peek aria-hidden="true"></div>
+
+<!-- Visor -->
+<div class="lightbox" data-lb aria-hidden="true" role="dialog" aria-modal="true" aria-label="Detalle del proyecto">
+  <button class="lb-close" aria-label="Cerrar">Cerrar ✕</button>
+  <button class="lb-nav prev" aria-label="Anterior">←</button>
+  <button class="lb-nav next" aria-label="Siguiente">→</button>
+  <div class="lb-body">
+    <div class="lb-art" data-lb-art></div>
+    <div class="lb-info">
+      <p class="lb-meta" data-lb-meta></p>
+      <h3 data-lb-title></h3>
+      <p data-lb-desc></p>
+      <ul data-lb-tags></ul>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
