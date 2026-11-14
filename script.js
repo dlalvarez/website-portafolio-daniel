@@ -246,8 +246,13 @@ $('[data-form]').addEventListener('submit',async e=>{
   const f=e.target,ok=$('.form-ok'),btn=$('button',f);
   btn.disabled=true;ok.textContent='Enviando…';
   try{
-    const r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},
+    const r=await fetch(SITE.contactEndpoint||'api/contact',{method:'POST',headers:{'Content-Type':'application/json'},
       body:JSON.stringify({name:f.n.value,email:f.e.value,message:f.m.value,website:f.website.value})});
+    if([404,405,501].includes(r.status)){ // hosting estático (GitHub Pages): sin backend → abre el correo
+      const q=new URLSearchParams({subject:`Contacto desde el portafolio — ${f.n.value}`,body:`${f.m.value}\n\n${f.n.value} <${f.e.value}>`});
+      location.href=`mailto:${SITE.email}?${q.toString().replace(/\+/g,'%20')}`;
+      ok.textContent='Se abrirá tu aplicación de correo para enviar el mensaje.';btn.disabled=false;return;
+    }
     const j=await r.json().catch(()=>({}));
     if(!r.ok)throw new Error(j.error||'Error al enviar');
     ok.textContent=`Gracias, ${f.n.value}. Recibí tu mensaje y te respondo pronto.`;f.reset();

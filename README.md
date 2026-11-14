@@ -54,6 +54,19 @@ tail -n 5 data/messages.jsonl
 
 Detrás de nginx/Traefik/Caddy usa `TRUST_PROXY=1` para que el límite use la IP real (`X-Forwarded-For`). **No lo actives si el servidor está expuesto directamente**, porque la cabecera sería falsificable.
 
+## Publicar en GitHub Pages
+
+El flujo `.github/workflows/pages.yml` valida el contenido en cada PR y publica en Pages al hacer push a `main`. Ajuste único (una vez): **Settings → Pages → Source: GitHub Actions**.
+
+URL resultante: `https://<usuario>.github.io/website-portafolio-daniel/` (todas las rutas del sitio son relativas, funciona bajo subruta).
+
+Pages es estático: no existe `/api/contact`. El formulario tiene dos modos:
+
+1. **Sin configurar (por defecto):** abre la app de correo con el mensaje prellenado hacia `site.email`.
+2. **Con webhook (recomendado):** en `content/site.json` pon `"contactEndpoint": "https://tu-n8n/webhook/contacto"`. El formulario hará POST JSON `{name,email,message,website}`. En el nodo Webhook de n8n activa **Allowed Origins (CORS)** con `https://<usuario>.github.io` y descarta peticiones con `website` no vacío (honeypot). Ten en cuenta que esa URL es pública: añade tu propia validación/límite en n8n.
+
+El servidor Node (`server.js`) solo hace falta si lo alojas tú mismo (siguiente sección).
+
 ## Despliegue (Docker, self-hosted)
 
 ```bash
